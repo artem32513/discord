@@ -118,7 +118,7 @@ def update_gear(user_id, pickaxe_level=None, helmet_level=None, gloves_level=Non
 def init_cases():
     cursor.execute('DELETE FROM cases')  # Очистка старых кейсов
     cases = [
-        ("common_case", 50, json.dumps([(10, 0.5), (20, 0.3), (30, 0.2)]),  # Золото, вероятность
+        ("common_case", 50, json.dumps([(10, 0.5), (20, 0.3), (30, 0.2)])),  # Золото, вероятность
         ("rare_case", 100, json.dumps([(50, 0.4), (100, 0.3), (150, 0.2), (200, 0.1)])),
         ("legendary_case", 200, json.dumps([(100, 0.3), (200, 0.2), (300, 0.3), (500, 0.2)]))
     ]
