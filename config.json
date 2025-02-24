@@ -1,0 +1,11 @@
+{
+    "TOKEN": "MTAyMzM1OTc0MzU3MTUzMzg2NA.GOABz3.eMoYsEJIx1OFHE-Jr91D1uSzlcRfWoPMGa1cPU",
+    "PREFIX": "!",
+    "roles": {
+        "123456789012345678": 50,  # Пример ID роли и цены
+        "987654321098765432": 100
+    },
+    "welcome_channel": "🔔new-person🔔",
+    "roles_channel": "🎭getting-roles🎭",
+    "admin_channel": "🔧developer🔧"
+}
