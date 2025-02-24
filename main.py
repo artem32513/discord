@@ -659,7 +659,9 @@ async def open_case(user, interaction, case_id):
         if rand <= cumulative:
             reward = value
             break
-    update_user_data(user.id, gold=-cost, gold=reward)
+    # Обновляем золото: вычитаем стоимость и добавляем награду
+    net_gold = gold - cost + reward
+    update_user_data(user.id, gold=net_gold)
     await interaction.response.send_message(embed=discord.Embed(
         title=f"{EMOJIS['cases']} Вы открыли {case_id.replace('_', ' ').title()}",
         description=f"Вы потратили {cost} {EMOJIS['gold']} и выиграли {reward} {EMOJIS['gold']}!",
